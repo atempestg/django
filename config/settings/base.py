@@ -179,7 +179,7 @@ LOGGING = {
             'filters': ['require_debug_false'],
             'class': 'logging.handlers.RotatingFileHandler',
             'maxBytes': 1024*1024*5, # 5MB
-            'backipCount': 5,
+            'backupCount': 5,
             'formatter': 'standard',
         },
     },
