@@ -2,8 +2,11 @@ from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
 from django.core.paginator import Paginator
 from django.db.models import Q, Count
+import logging
 
 from ..models import Question, QuestionCount
+
+logger = logging.getLogger('pybo')
 
 per_page = 20
 
@@ -11,7 +14,7 @@ def index(request):
     """
     pybo 목록출력
     """
-    3/0
+    logger.info("INFO 레벨로 출력")
     # 입력인자
     page = request.GET.get('page','1')
     kw = request.GET.get('kw','')
