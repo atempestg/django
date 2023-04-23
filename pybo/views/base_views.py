@@ -11,6 +11,7 @@ def index(request):
     """
     pybo 목록출력
     """
+    3/0
     # 입력인자
     page = request.GET.get('page','1')
     kw = request.GET.get('kw','')
